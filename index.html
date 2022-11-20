@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Friends</title>
 
-    <!--Google Fonts: -->
-
     <!-- Vlastní CSS -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!--Google Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!--Menu-icon font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript.js"></script>
+
 </head>
 
 <body>
     <nav class="menu">
         <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Úvod</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">O nás</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Snídaně</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Nápoje</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Události</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link--active">Domů</a></li>
+            <div id="menu--hidable">
+                <li class="menu__item"><a href="#" class="menu__link">O nás</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Snídaně</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Nápoje</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Události</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
+            </div>
         </ul>
+
+        <!-- Ikona menu -->
+        <a href="javascript:void(0);" class="menu__icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
     <header class="header">

@@ -1,0 +1,55 @@
+@use 'variable';
+
+.menu {
+    overflow: hidden;
+    position: relative;
+
+
+    & #menu--hidable {
+        display: none;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        background-color: $c-primary;
+        padding: 14px 16px;
+        display: block;
+
+        &:hover {
+            background-color: #fff;
+            color: $c-primary;
+        }
+    }
+
+    &__icon {
+        background-color: $c-primary;
+        color: #fff;
+        padding: 14px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media screen and (min-width: $breakpoint-pc) {
+        display: none;
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: $c-primary;
+        }
+    }
+
+    &__link--active {
+        background-color: $c-primary ;
+        color: #fff;
+        font-weight: bold;
+    }
+
+}

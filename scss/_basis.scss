@@ -1,0 +1,10 @@
+@use 'variable';
+html {box-sizing: border-box;}
+*,::before,::after { box-sizing: inherit;}
+
+body {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+}
