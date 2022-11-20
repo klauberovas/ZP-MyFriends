@@ -1,14 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "Lora", serif;
+}
+
 .menu {
   overflow: hidden;
   position: relative;
 }
-.menu #menu-hidable {
+@media screen and (min-width: 960px) {
+  .menu {
+    background-color: #282828;
+  }
+}
+.menu #menu--hidable {
   display: none;
 }
 .menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media screen and (min-width: 960px) {
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .menu__link {
   text-decoration: none;
@@ -30,6 +56,11 @@
   right: 0;
   top: 0;
 }
+@media screen and (min-width: 960px) {
+  .menu__icon {
+    display: none;
+  }
+}
 .menu__icon:hover {
   background-color: #fff;
   color: #282828;
@@ -38,19 +69,4 @@
   background-color: #282828;
   color: #fff;
   font-weight: bold;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  font-size: 17px;
-  line-height: 1.5;
-  font-family: "Lora", serif;
 }/*# sourceMappingURL=style.css.map */

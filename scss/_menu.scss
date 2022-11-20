@@ -4,6 +4,9 @@
     overflow: hidden;
     position: relative;
 
+    @media screen and (min-width: variable.$breakpoint-pc) {
+    background-color: variable.$c-primary;
+    }
 
     & #menu--hidable {
         display: none;
@@ -13,41 +16,46 @@
         margin: 0;
         padding: 0;
         list-style: none;
+    @media screen and (min-width: variable.$breakpoint-pc) {
+        display: flex;
+        justify-content: space-between;
+        }
     }
 
     &__link {
         text-decoration: none;
         color: #fff;
-        background-color: $c-primary;
+        background-color: variable.$c-primary;
         padding: 14px 16px;
         display: block;
 
         &:hover {
             background-color: #fff;
-            color: $c-primary;
+            color: variable.$c-primary;
         }
     }
 
     &__icon {
-        background-color: $c-primary;
+        background-color: variable.$c-primary;
         color: #fff;
         padding: 14px;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-        @media screen and (min-width: $breakpoint-pc) {
+
+        @media  screen and (min-width: variable.$breakpoint-pc) {
         display: none;
         }
 
         &:hover {
             background-color: #fff;
-            color: $c-primary;
+            color: variable.$c-primary;
         }
     }
 
     &__link--active {
-        background-color: $c-primary ;
+        background-color: variable.$c-primary ;
         color: #fff;
         font-weight: bold;
     }
