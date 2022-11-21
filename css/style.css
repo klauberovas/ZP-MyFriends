@@ -25,6 +25,11 @@ body {
 .menu #menu--hidable {
   display: none;
 }
+@media screen and (min-width: 960px) {
+  .menu #menu--hidable {
+    display: flex;
+  }
+}
 .menu__list {
   margin: 0;
   padding: 0;
@@ -69,4 +74,34 @@ body {
   background-color: #282828;
   color: #fff;
   font-weight: bold;
+}
+
+.header {
+  background-image: url(/images/header-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.header__logo, .header__text {
+  color: #fff;
+  text-align: center;
+}
+.header__logo {
+  font-weight: bold;
+  font-size: 46px;
+  padding: 30px 0 0 0;
+  text-shadow: 5px 0px 2px rgba(28, 27, 27, 0.74);
+}
+.header__logo::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 0;
+}
+.header__text {
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

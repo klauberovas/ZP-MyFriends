@@ -10,6 +10,9 @@
 
     & #menu--hidable {
         display: none;
+    @media screen and (min-width: variable.$breakpoint-pc) {
+       display: flex; 
+    }    
     }
 
     &__list {
