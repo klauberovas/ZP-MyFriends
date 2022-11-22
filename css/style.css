@@ -20,6 +20,11 @@ body {
   padding: 10px 30px;
 }
 
+section,
+footer {
+  margin: 0 auto;
+}
+
 .menu {
   overflow: hidden;
   position: relative;
@@ -157,4 +162,8 @@ body {
 
 .title--padding {
   padding-top: 30px;
+}
+
+.table__text:last-child {
+  padding-left: 20px;
 }/*# sourceMappingURL=style.css.map */
