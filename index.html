@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 
     <!--Menu-icon font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link menu__link--active">Domů</a></li>
             <div id="menu--hidable">
@@ -47,17 +48,25 @@
 
     <main>
 
-        <section class="breakfast">
+        <section class="breakfast-nav">
 
-            <img class="photo" src="" alt="">
+            <div class="grid">
 
-            <h2 class="title">Snídaně</h2>
-            <p>8-10h</p>
+                <div class="grid-column__left">
+                    <img class="breakfast-nav__img" src="images/pancake.jpg" alt="Sweet toust">
+                </div>
 
-            <button>více</button>
+                <div class="grid-column__middle breakfast-nav__content">
+                    <h2 class="title title--margin title--padding">Snídaně</h2>
+                    <p class="breakfast-nav__text">8-10h</p>
+                    <a class="button-primary" href="#">více</a>
+                </div>
 
-            <img class="photo" src="" alt="">
+                <div class="grid-column__right">
+                    <img class="breakfast-nav__img" src="images/benedict-eggs.jpg" alt="Eggs Benedict">
+                </div>
 
+            </div>
         </section>
 
         <section class="lunch-menu">
@@ -96,7 +105,7 @@
 
         <section class="events">
             <h2 class="title">Události</h2>
-            <button class="button-primary">více</button>
+            <a href="#">více</a>
 
             <div class="event">
                 <img class="photo" src="" alt="">
@@ -125,7 +134,7 @@
 
     </main>
 
-    <button class="button-primary">Nahoru</button>
+    <a href="#menu">Nahoru</a>
 
     <footer class="footer">
         <div class="footer__registration">

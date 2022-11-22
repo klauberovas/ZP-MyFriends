@@ -1,0 +1,47 @@
+@use 'variable';
+
+.breakfast-nav {
+    opacity: 0.8;
+    
+
+    &__img {
+    display: none;
+    @media screen and (min-width: variable.$breakpoint-pc) {
+        display: block;
+        width: 100%;
+        height: 250px;
+        }
+    }
+
+    &__content {
+    text-align: center;
+    background-image: url(/images/breakfast-nav.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 250px;
+    @media screen and (min-width: variable.$breakpoint-pc){
+        height: 100%;
+        }
+    }
+
+    &__text {
+    margin-top: 0; 
+    }
+}
+
+.grid {
+    @media screen and (min-width: variable.$breakpoint-pc) {
+      display: grid; 
+      grid-template-columns: 1fr 2fr 1fr; 
+      grid-template-rows: 250px;
+    }
+
+}
+
+.title--margin {
+    margin: 0;
+}
+.title--padding {
+    padding-top: 30px;
+}
