@@ -1,6 +1,7 @@
-@use 'variable';
+@use 'variables';
 
 .header {
+    opacity: 0.9;
     background-image: url(../images/header-img.jpg);
     background-size: cover;
     background-position: center;
@@ -15,10 +16,11 @@
     }
 
     &__logo {
-        font-family: 'IM Fell English SC', serif;
+        // font-family: 'IM Fell English SC', serif;
+        font-weight: bold;
         font-size: 48px;
         padding: 20px 0 0 0;
-        text-shadow: 5px 0px 2px rgba(28, 27, 27, 0.74);
+        // text-shadow: 5px 0px 2px rgba(28, 27, 27, 0.74);
     }
 
     &__logo::after {

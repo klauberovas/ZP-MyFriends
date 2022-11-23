@@ -1,5 +1,29 @@
+@use 'variables';
+
+.lunch-menu {
+    padding: 0 10px 10px 10px;
+    
+   @media screen and (min-width: variables.$breakpoint-pc) {
+    width: 960px;
+    padding: 0 40px 40px 40px;
+   }
+}
+
 .table {
+    // border-collapse: collapse;
+    &__header {
+        padding: 20px 0 0 10px;
+        text-align: left;
+    }
+
+    &__text {
+        border-bottom: 1px dashed #000;  
+    }
+    
     &__text:last-child {
-        padding-left: 20px;   
+        padding-left: 20px; 
+        border: 0;  
      }
 }
+
+

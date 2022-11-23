@@ -1,16 +1,16 @@
-@use 'variable';
+@use 'variables';
 
 .menu {
     overflow: hidden;
     position: relative;
 
-    @media screen and (min-width: variable.$breakpoint-pc) {
-    background-color: variable.$c-primary;
+    @media screen and (min-width: variables.$breakpoint-pc) {
+    background-color: variables.$c-primary;
     }
 
     & #menu--hidable {
         display: none;
-    @media screen and (min-width: variable.$breakpoint-pc) {
+    @media screen and (min-width: variables.$breakpoint-pc) {
        display: flex; 
     }    
     }
@@ -19,7 +19,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-    @media screen and (min-width: variable.$breakpoint-pc) {
+    @media screen and (min-width: variables.$breakpoint-pc) {
         display: flex;
         justify-content: space-between;
         }
@@ -28,18 +28,18 @@
     &__link {
         text-decoration: none;
         color: #fff;
-        background-color: variable.$c-primary;
+        background-color: variables.$c-primary;
         padding: 14px 16px;
         display: block;
 
         &:hover {
             background-color: #fff;
-            color: variable.$c-primary;
+            color: variables.$c-primary;
         }
     }
 
     &__icon {
-        background-color: variable.$c-primary;
+        background-color: variables.$c-primary;
         color: #fff;
         padding: 14px;
         display: block;
@@ -47,18 +47,18 @@
         right: 0;
         top: 0;
 
-        @media  screen and (min-width: variable.$breakpoint-pc) {
+        @media  screen and (min-width: variables.$breakpoint-pc) {
         display: none;
         }
 
         &:hover {
             background-color: #fff;
-            color: variable.$c-primary;
+            color: variables.$c-primary;
         }
     }
 
     &__link--active {
-        background-color: variable.$c-primary ;
+        background-color: variables.$c-primary ;
         color: #fff;
         font-weight: bold;
     }

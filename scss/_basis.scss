@@ -1,4 +1,4 @@
-@use 'variable';
+@use 'variables';
 
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
@@ -8,6 +8,7 @@ body {
     font-size: 17px;
     line-height: 1.5;
     font-family: 'Lora', serif;
+
 }
 
 .button-primary {
@@ -17,7 +18,21 @@ body {
     padding: 10px 30px;
 }
 
+
 section, 
 footer {
     margin: 0 auto;
 }
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+
+    &__text {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
