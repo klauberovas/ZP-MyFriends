@@ -36,6 +36,11 @@ footer {
   text-align: center;
 }
 
+.photo {
+  height: 100%;
+  width: 100%;
+}
+
 .menu {
   overflow: hidden;
   position: relative;
@@ -132,16 +137,6 @@ footer {
 .breakfast-nav {
   opacity: 0.8;
 }
-.breakfast-nav__img {
-  display: none;
-}
-@media screen and (min-width: 960px) {
-  .breakfast-nav__img {
-    display: block;
-    width: 100%;
-    height: 250px;
-  }
-}
 .breakfast-nav__content {
   text-align: center;
   background-image: url(../images/breakfast-nav.jpg);
@@ -152,7 +147,7 @@ footer {
 }
 @media screen and (min-width: 960px) {
   .breakfast-nav__content {
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -160,7 +155,28 @@ footer {
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 250px;
+    grid-template-rows: 300px;
+  }
+}
+.grid__column-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid__column-middle {
+  grid-column: 2;
+  grid-row: 1;
+}
+.grid__column-right {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.photo--hidden {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .photo--hidden {
+    display: block;
   }
 }
 
@@ -184,4 +200,9 @@ footer {
 .table__text:last-child {
   padding-left: 20px;
   border: 0;
+}
+
+.grid--medium {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px;
 }/*# sourceMappingURL=style.css.map */
