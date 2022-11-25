@@ -1,6 +1,14 @@
 @use 'variables';
 
-.grid--medium {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px;
+.event {
+    &__text, 
+    &__title,
+    &__date {
+        margin: 0;
+        text-align: center;
+    }
+
+    &__date {
+        margin-bottom: 40px;
+    }
 }

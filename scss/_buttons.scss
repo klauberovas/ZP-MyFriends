@@ -1,0 +1,16 @@
+@use 'variables';
+
+.button {
+    text-decoration: none;
+    padding: 10px 30px;
+
+    &--white {
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    &--black {
+        color: #000;
+        border: 2px solid #000;
+    }
+}

@@ -13,32 +13,59 @@ body {
   font-family: "Lora", serif;
 }
 
-.button-primary {
-  text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 30px;
-}
-
+nav,
+header,
 section,
 footer {
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 960px) {
+  nav,
+header,
+section,
+footer {
+    width: 1100px;
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.button--white {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.button--black {
+  color: #000;
+  border: 2px solid #000;
 }
 
 .title {
   font-size: 36px;
   margin: 0;
-  padding-top: 30px;
   text-align: center;
 }
 .title__text {
   margin-top: 0;
   text-align: center;
 }
+.title--padding {
+  padding-top: 20px;
+}
 
 .photo {
   height: 100%;
   width: 100%;
+}
+.photo--hidden {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .photo--hidden {
+    display: block;
+  }
 }
 
 .menu {
@@ -134,28 +161,19 @@ footer {
   font-style: italic;
 }
 
-.breakfast-nav {
-  opacity: 0.8;
-}
-.breakfast-nav__content {
-  text-align: center;
-  background-image: url(../images/breakfast-nav.jpg);
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  height: 250px;
-}
-@media screen and (min-width: 960px) {
-  .breakfast-nav__content {
-    height: auto;
+@media screen and (min-width: 540px) {
+  .grid--tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px;
   }
 }
-
 @media screen and (min-width: 960px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 300px;
+    gap: 20px;
   }
 }
 .grid__column-left {
@@ -171,12 +189,20 @@ footer {
   grid-row: 1;
 }
 
-.photo--hidden {
-  display: none;
+.breakfast-nav {
+  opacity: 0.8;
+}
+.breakfast-nav__content {
+  text-align: center;
+  background-image: url(../images/breakfast-nav.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 250px;
 }
 @media screen and (min-width: 960px) {
-  .photo--hidden {
-    display: block;
+  .breakfast-nav__content {
+    height: auto;
   }
 }
 
@@ -202,7 +228,10 @@ footer {
   border: 0;
 }
 
-.grid--medium {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 500px;
+.event__text, .event__title, .event__date {
+  margin: 0;
+  text-align: center;
+}
+.event__date {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

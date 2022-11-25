@@ -1,0 +1,14 @@
+@use 'variables';
+
+.photo {
+    height: 100%;
+    width: 100%;
+
+    &--hidden {
+    display: none;
+    
+    @media screen and (min-width: variables.$breakpoint-pc) {
+        display: block;
+    }
+}
+}

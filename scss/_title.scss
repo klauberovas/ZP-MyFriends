@@ -1,0 +1,16 @@
+@use 'variables';
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+
+    &__text {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    &--padding {
+        padding-top: 20px;
+    }
+}
