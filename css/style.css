@@ -161,18 +161,19 @@ footer {
   font-style: italic;
 }
 
-@media screen and (min-width: 540px) {
-  .grid--tablet {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 450px;
-  }
-}
 @media screen and (min-width: 960px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 300px;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .grid--tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px;
     gap: 20px;
   }
 }
