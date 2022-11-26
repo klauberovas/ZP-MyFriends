@@ -4,19 +4,11 @@
 
     @media screen and (min-width: variables.$breakpoint-pc) {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 300px;
-        gap: 20px;
+        // gap: 20px;
     }
 
-    @media screen and (min-width: variables.$breakpoint-tablet) {
-    &--tablet {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 450px;
-        gap: 20px;
-        }
-    }
 
     &__column-left {
         grid-column: 1;
@@ -32,4 +24,11 @@
         grid-column: 3;
         grid-row: 1;
     }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
 }

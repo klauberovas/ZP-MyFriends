@@ -1,14 +1,58 @@
 @use 'variables';
+.events {
+    text-align: center;
+    @media screen and (min-width: variables.$breakpoint-large-screen ) {
+        max-width: variables.$breakpoint-large-screen;
+    }
+}
 
-.event {
-    &__text, 
-    &__title,
-    &__date {
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+
+    @media screen and (min-width: variables.$breakpoint-tablet ) {
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;  
+    }  
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    @media screen and (min-width: variables.$breakpoint-tablet ) {
         margin: 0;
+        
+    &:nth-child(2) {
+        margin: 0 20px;
+        }
+    }
+
+    @media screen and (min-width: variables.$breakpoint-large-screen ) {
+        flex: 1;
+    }
+
+    &__text, 
+    &__title, 
+    &__date {
+        margin: 0;  
+    }
+
+    &__title {
         text-align: center;
     }
 
-    &__date {
-        margin-bottom: 40px;
+    &__img {
+        max-height: 350px;
+        width: 100%;
+
     }
 }

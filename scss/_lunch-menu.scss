@@ -10,14 +10,15 @@
 }
 
 .table {
-    // border-collapse: collapse;
+    
     &__header {
         padding: 20px 0 0 10px;
         text-align: left;
     }
 
     &__text {
-        border-bottom: 1px dashed #000;  
+        border-bottom: 1px dashed #000; 
+        text-align: left; 
     }
     
     &__text:last-child {

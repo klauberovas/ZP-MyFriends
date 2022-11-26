@@ -47,26 +47,7 @@
 
     <main>
 
-        <section class="breakfast-nav">
 
-            <div class="grid">
-
-                <div class="grid__column-left">
-                    <img class="photo photo--hidden" src="images/pancake.jpg" alt="Sweet toust">
-                </div>
-
-                <div class="grid__column-middle breakfast-nav__content">
-                    <h2 class="title title--padding">Snídaně</h2>
-                    <p class="title__text">8-10h</p>
-                    <a class="button button--white" href="#">více</a>
-                </div>
-
-                <div class="grid__column-right">
-                    <img class="photo photo--hidden" src="images/benedict-eggs.jpg" alt="Eggs Benedict">
-                </div>
-
-            </div>
-        </section>
 
         <section class="lunch-menu">
 
@@ -167,53 +148,117 @@
             </table>
         </section>
 
-        <section class="events">
-            <h2 class="title">Události</h2>
+        <section class="breakfast-nav">
 
-
-            <div class="grid--tablet">
+            <div class="grid">
 
                 <div class="grid__column-left">
-                    <img class="photo photo--medium" src="images/stand-up-comedy.jpg" alt="Microphone">
-                    <p class="event__text">akce</p>
-                    <h3 class="event__title">Stand up comedy</h3>
-                    <p class="event__date">8.12.2022</p>
+                    <img class="photo photo--hidden" src="images/pancake.jpg" alt="Sweet toust">
                 </div>
 
-                <div class="grid__column-middle">
-                    <img class="photo photo--medium" src="images/christmas-party.jpg" alt="Christmas table">
-                    <p class="event__text">akce</p>
-                    <h3 class="event__title">Christmas party</h3>
-                    <p class="event__date">23.12.2022</p>
+                <div class="grid__column-middle breakfast-nav__content">
+                    <h2 class="title title--padding">Snídaně</h2>
+                    <p class="title__text">8-10h</p>
+                    <a class="button button--white" href="#">více</a>
                 </div>
 
                 <div class="grid__column-right">
-                    <img class="photo photo--medium" src="images/new-year.jpg" alt="Fireworks">
-
-                    <p class="event__text">akce</p>
-                    <h3 class="event__title">Welcome, New Year 2023</h3>
-                    <p class="event__date">31.12.2022</p>
+                    <img class="photo photo--hidden" src="images/benedict-eggs.jpg" alt="Eggs Benedict">
                 </div>
+
             </div>
-            <a class="button button--black" href="#">více</a>
+        </section>
+
+        <section class="events">
+            <h2 class="title">Události</h2>
+
+            <div class="flex">
+
+                <div class="card">
+                    <img class="card__img" src="images/stand-up-comedy.jpg" alt="Microphone">
+
+                    <div class="card__body">
+                        <h3 class="card__title">Stand up comedy</h3>
+                        <ul>
+                            <li class="card__date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                8.12.2022, 17:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="images/christmas-party.jpg" alt="Christmas table">
+
+                    <div class="card__body">
+                        <h3 class="card__title">Christmas party</h3>
+                        <ul>
+                            <li class="card__date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                23.12.2022, 19:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="images/new-year.jpg" alt="Fireworks">
+
+                    <div class="card__body">
+                        <h3 class="card__title">Welcome, New Year</h3>
+                        <ul>
+                            <li class="card__date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                31.12.2022, 20:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <a class="button button--black button--margin" href="#">více</a>
         </section>
 
     </main>
 
-    <a href="#menu">Nahoru</a>
+    <div class="text-center">
+        <a class="button" href="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+            Nahoru</a>
+    </div>
 
     <footer class="footer">
-        <div class="footer__registration">
-            <h3>Zaregistrujte se k odběru novinek!</h3>
-            <p>(odpolední menu, události, slevové akce)</p>
+        <div class="footer__newsletter">
+            <h3 class="footer__title">Zaregistrujte se k odběru novinek!</h3>
+            <p class="footer__text">(odpolední menu, události, slevové akce)</p>
 
-            <button class="button-primary">Zaregistrovat se</button>
+            <input class="input" type="email" value="novak@gmail.com">
+            <a href="#" class="button button--white">Zaregistrovat se</a>
+
         </div>
 
-        <div class="footer__opening">
-            <h3>Otevírací doba</h3>
-            <p>pondělí až sobota 8:00 - 22:00 hod.</p>
-            <p>neděle 8:00 - 18:00 hod.</p>
+        <div class="footer__open">
+            <h3 class="footer__title">Otevírací doba</h3>
+            <p class="footer__text">pondělí až sobota 8:00 - 22:00 hod.</p>
+            <p class="footer__text">neděle 8:00 - 18:00 hod.</p>
         </div>
 
         <div class="footer__copyright">

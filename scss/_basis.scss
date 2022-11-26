@@ -10,15 +10,35 @@ body {
     font-family: 'Lora', serif;
 
 }
+main {
+    margin-bottom: 100px;
+}
 
 nav, 
 header,
 section, 
-footer {
+footer,
+.text-center{
     margin: 0 auto;
-    margin-bottom: 20px;
-    @media screen and (min-width: variables.$breakpoint-pc) {
-    width: 1100px;
+    text-align: center;
+ }
+
+header,
+section,
+.text-center {
+    margin-bottom: 40px;
 }
+
+nav {
+    margin: 0 auto;
 }
+
+img {
+    width: 100%;
+}
+
+
+
+
+
 
