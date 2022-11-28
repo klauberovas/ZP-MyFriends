@@ -1,6 +1,11 @@
 @use 'variables';
 .events {
+    padding: 0 20px;
     text-align: center;
+    @media screen and (min-width: variables.$breakpoint-pc ) {
+        padding: 0;
+    }
+    
     @media screen and (min-width: variables.$breakpoint-large-screen ) {
         max-width: variables.$breakpoint-large-screen;
     }
@@ -8,14 +13,13 @@
 
 .flex {
     display: flex;
-    gap: 20px;
     flex-direction: column;
-    
+    gap: 20px;
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
       flex-direction: row;
-      gap: 0;
-      justify-content: center;  
+      justify-content: center;
+      gap: 0; 
     }  
 }
 
@@ -50,9 +54,11 @@ ul {
         text-align: center;
     }
 
+    &__time {
+        font-weight: bold;
+    }
+
     &__img {
         max-height: 350px;
-        width: 100%;
-
     }
 }

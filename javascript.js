@@ -18,3 +18,14 @@ function screenResize() {
 }
 
 window.onresize = screenResize;
+
+function submitForm () {
+  var x = document.getElementById("newsletter");
+  x.style.display = "none";
+
+  x = document.getElementById("submit-button");
+  x.style.display = "none";
+
+  x = document.getElementById("after-submit-text");
+  x.style.display = "block";
+}

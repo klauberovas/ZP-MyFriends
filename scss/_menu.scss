@@ -3,6 +3,7 @@
 .menu {
     overflow: hidden;
     position: relative;
+    text-align: left;
 
     @media screen and (min-width: variables.$breakpoint-pc) {
     background-color: variables.$c-primary;

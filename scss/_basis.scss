@@ -10,6 +10,7 @@ body {
     font-family: 'Lora', serif;
 
 }
+
 main {
     margin-bottom: 100px;
 }
@@ -18,19 +19,15 @@ nav,
 header,
 section, 
 footer,
-.text-center{
+.scroll-up{
     margin: 0 auto;
     text-align: center;
  }
 
 header,
 section,
-.text-center {
+.scroll-up{
     margin-bottom: 40px;
-}
-
-nav {
-    margin: 0 auto;
 }
 
 img {

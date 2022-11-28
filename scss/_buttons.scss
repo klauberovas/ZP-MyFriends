@@ -6,7 +6,6 @@
     display: inline-block;
     color: #000;
 
-
     &--white {
         color: #fff;
         border: 2px solid #fff;
@@ -18,7 +17,6 @@
     }
 
     &--black {
-        color: #000;
         border: 2px solid #000;
         
        &:hover {
@@ -29,6 +27,11 @@
 
     &--margin {
         margin-top: 10px;
+    }
+
+    &--block {
+        display: block;
+        margin: 10px auto;
     }
 }
 

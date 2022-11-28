@@ -15,31 +15,45 @@
     
     }
 
-    &__title, 
-    &__text{
-        margin: 0;
+    &__newsletter,
+    &__open {
+    @media screen and (min-width: variables.$breakpoint-pc) {
+        flex-basis: 100%;
+        }
     }
 
-    &__text {
-        font-style: italic;
-    }  
-
-     &__copyright{
+    &__copyright{
         background-color: #000; 
         padding: 20px 0;
         
     @media screen and (min-width: variables.$breakpoint-tablet) {
         flex-basis: 100%;
-        font-weight: bold;
         }
     }
+
+    &__text,
+    &__copyright {
+        font-size: 14px;
+    }
+
+    &__title, 
+    &__text{
+        margin: 0;
+    }
+   
 }
 
 .input {
     padding: 10px 30px;
+    margin-top: 20px;
     text-align: center;
     font-style: italic;
 }
 
-
+.hidden--alert {
+    color: #62b022;
+    font-weight: bold;
+    display: none;
+    margin: 10px;
+}
 
