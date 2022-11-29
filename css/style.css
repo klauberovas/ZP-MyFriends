@@ -96,6 +96,7 @@ img {
   overflow: hidden;
   position: relative;
   text-align: left;
+  background-color: #3e3d3d;
 }
 @media screen and (min-width: 960px) {
   .menu {
@@ -124,7 +125,6 @@ img {
 .menu__link {
   text-decoration: none;
   color: #fff;
-  background-color: #3e3d3d;
   padding: 14px 16px;
   display: block;
 }
@@ -150,10 +150,9 @@ img {
   background-color: #fff;
   color: #3e3d3d;
 }
-.menu__link--active {
-  background-color: #3e3d3d;
-  color: #fff;
+.menu__link--inline-block {
   font-weight: bold;
+  display: inline-block;
 }
 
 .header {

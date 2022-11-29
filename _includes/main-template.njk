@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--Google Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!--Menu-icon font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/javascript.js"></script>
+
+</head>
+
+<body>
+    <nav class="menu" id="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link menu__link--inline-block">Domů</a></li>
+            <div id="menu--hidable">
+                <li class="menu__item"><a href="/onas/" class="menu__link">O nás</a></li>
+                <li class="menu__item"><a href="/snidane/" class="menu__link">Snídaně</a></li>
+                <li class="menu__item"><a href="/napoje/" class="menu__link">Nápoje</a></li>
+                <li class="menu__item"><a href="/udalosti/" class="menu__link">Události</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+            </div>
+        </ul>
+
+        <!-- Ikona menu -->
+        <a href="javascript:void(0);" class="menu__icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__title">My Friends</div>
+            <p class="header__text">bistro & coffee</p>
+        </div>
+
+
+        <div class="siema">
+            <img class="header__image" src="/images/header-img.jpg" alt="Bistro My Friends">
+            <img class="header__image" src="/images/breakfast-slider.jpg" alt="Breakfast menu">
+            <img class="header__image" src="/images/lunch-slider.jpg" alt="Lunch menu">
+            <img class="header__image" src="/images/party-slider.jpg" alt="Party in bistro">
+        </div>
+
+
+        <!--Add Siema-->
+        <script src="/siema.min.js"></script>
+        <script>
+            const siema = new Siema({
+                loop: true,
+            });
+            setInterval(() => {
+                siema.next();
+            }, 4000);
+        </script>
+    </header>
+
+    <main>
+
+        {{ content | safe }}
+
+    </main>
+
+    <div class="scroll-up">
+        <a class="button" href="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-circle">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+            Nahoru</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__newsletter">
+            <h3 class="footer__title">Zaregistrujte se k odběru novinek!</h3>
+            <p class="footer__text">(odpolední menu, události, slevové akce)</p>
+
+            <p class="hidden--alert" id="after-submit-text">Děkujeme za registraci :)</p>
+
+            <input type="email" value="novak@gmail.com" id="newsletter" class="input">
+            <button onclick="submitForm()" for="newsletter" id="submit-button"
+                class="button button--black button--block">Zaregistrovat
+                se</button>
+
+        </div>
+
+        <div class="footer__open">
+            <h3 class="footer__title">Otevírací doba</h3>
+            <p class="footer__text">pondělí až sobota 8:00 - 22:00 hod.</p>
+            <p class="footer__text">neděle 8:00 - 18:00 hod.</p>
+        </div>
+
+        <div class="footer__copyright">
+            &copy;2022, Staň se kóderkou, Czechitas.
+        </div>
+    </footer>
+</body>
+
+</html>

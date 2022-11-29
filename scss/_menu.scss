@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     text-align: left;
+    background-color: variables.$c-primary ;
 
     @media screen and (min-width: variables.$breakpoint-pc) {
     background-color: variables.$c-primary;
@@ -29,7 +30,6 @@
     &__link {
         text-decoration: none;
         color: #fff;
-        background-color: variables.$c-primary;
         padding: 14px 16px;
         display: block;
 
@@ -58,10 +58,9 @@
         }
     }
 
-    &__link--active {
-        background-color: variables.$c-primary ;
-        color: #fff;
+    &__link--inline-block {
         font-weight: bold;
+        display: inline-block;
     }
 
 }

@@ -1,315 +1,209 @@
-<!DOCTYPE html>
-<html lang="cs">
+---
+layout: main-template.njk
+title: My Friends
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Friends</title>
+<section class="lunch-menu">
 
-    <!-- Vlastní CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <h2 class="title">Polední menu</h2>
+    <p class="title__text">16.10&nbsp;-&nbsp;20.10</p>
 
-    <!--Google Fonts: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+    <table class="table">
+        <th class="table__header">Pondělí</th>
 
-    <!--Menu-icon font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="javascript.js"></script>
+        <tr class="table__row">
+            <td class="table__text">Finská lososová polévka s čerstvým koprem a smetanou</td>
+            <td class="table__text">65&nbsp;kč</td>
+        </tr>
 
-</head>
+        <tr class="table__row">
+            <td class="table__text">Rýže basmati s restovanými kousky krůtího masa</td>
+            <td class="table__text">135&nbsp;kč</td>
+        </tr>
 
-<body>
-    <nav class="menu" id="menu">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link menu__link--active">Domů</a></li>
-            <div id="menu--hidable">
-                <li class="menu__item"><a href="#" class="menu__link">O nás</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Snídaně</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Nápoje</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Události</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
-            </div>
-        </ul>
+        <tr class="table__row">
+            <td class="table__text">Bramborové noky se špenátem a smetanou, sypané parmazánem</td>
+            <td class="table__text">142&nbsp;kč</td>
+        </tr>
 
-        <!-- Ikona menu -->
-        <a href="javascript:void(0);" class="menu__icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+        <th class="table__header">Úterý</th>
 
-    <header class="header">
-        <div class="header__logo">
-            <div class="header__title">My Friends</div>
-            <p class="header__text">bistro & coffee</p>
+        <tr class="table__row">
+            <td class="table__text">Dýňový krém s praženými dýňovými semínky</td>
+            <td class="table__text">55&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Hovězí na červeném víně a bramborová kaše s máslem</td>
+            <td class="table__text">165&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Čerstvé tagliatelle s omáčkou quattro formaggi, sušenými rajčaty a rukolou
+            </td>
+            <td class="table__text">145&nbsp;kč</td>
+        </tr>
+
+
+        <th class="table__header">Středa</th>
+
+        <tr class="table__row">
+            <td class="table__text">Květákový krém s muškátovým oříškem, máslové krutony</td>
+            <td class="table__text">50&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Šťavnaté grilované kuřecí prso, brokolice, zeleninový kuskus</td>
+            <td class="table__text">150&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Kuřecí gyros, zelný salát, jogurtový dresink, zelenina, pita chléb</td>
+            <td class="table__text">155&nbsp;kč</td>
+        </tr>
+
+        <th class="table__header">Čtvrtek</th>
+
+        <tr class="table__row">
+            <td class="table__text">Polévka z červené čočky</td>
+            <td class="table__text">55&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Hovězí tafelspitz, vařená kořenová zelenina, brambory s pažitkou</td>
+            <td class="table__text">165&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Toretellini plněné prosciuttem s máslem, čerstvou šalvějí, rukolou a
+                parmazánem</td>
+            <td class="table__text">140&nbsp;kč</td>
+        </tr>
+
+        <th class="table__header">Pátek</th>
+        <tr class="table__row">
+            <td class="table__text">Boršč se zakysanou smetanou</td>
+            <td class="table__text">55&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Grilovaná vepřová panenka, smetanovo-hříbková omáčka, šťouchané brambory s
+                křupavou
+                cibulkou</td>
+            <td class="table__text">160&nbsp;kč</td>
+        </tr>
+
+        <tr class="table__row">
+            <td class="table__text">Grilovaný kozí sýr, salát z černé čočky beluga, pečená dýně, zelenina a
+                medovo-hořčičný dresink</td>
+            <td class="table__text">170&nbsp;kč</td>
+        </tr>
+
+    </table>
+</section>
+
+<section class="breakfast-nav">
+
+    <div class="grid">
+
+        <div class="grid__column-left">
+            <img class="photo photo--hidden" src="/images/pancake.jpg" alt="Sweet toust">
         </div>
 
-
-        <div class="siema">
-            <img class="header__image" src="images/header-img.jpg" alt="Bistro My Friends">
-            <img class="header__image" src="images/breakfast-slider.jpg" alt="Breakfast menu">
-            <img class="header__image" src="images/lunch-slider.jpg" alt="Lunch menu">
-            <img class="header__image" src="images/party-slider.jpg" alt="Party in bistro">
+        <div class="grid__column-middle breakfast-nav__content">
+            <h2 class="title title--padding">Snídaně</h2>
+            <p class="title__text">8-10h</p>
+            <a class="button button--white" href="/snidane/">více</a>
         </div>
 
+        <div class="grid__column-right">
+            <img class="photo photo--hidden" src="/images/benedict-eggs.jpg" alt="Eggs Benedict">
+        </div>
 
-        <!--Add Siema-->
-        <script src="siema.min.js"></script>
-        <script>
-            const siema = new Siema({
-                loop: true,
-            });
-            setInterval(() => {
-                siema.next();
-            }, 4000);
-        </script>
-    </header>
-
-    <main>
-
-        <section class="lunch-menu">
-
-            <h2 class="title">Polední menu</h2>
-            <p class="title__text">16.10&nbsp;-&nbsp;20.10</p>
-
-            <table class="table">
-                <th class="table__header">Pondělí</th>
-
-                <tr class="table__row">
-                    <td class="table__text">Finská lososová polévka s čerstvým koprem a smetanou</td>
-                    <td class="table__text">65&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Rýže basmati s restovanými kousky krůtího masa</td>
-                    <td class="table__text">135&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Bramborové noky se špenátem a smetanou, sypané parmazánem</td>
-                    <td class="table__text">142&nbsp;kč</td>
-                </tr>
-
-                <th class="table__header">Úterý</th>
-
-                <tr class="table__row">
-                    <td class="table__text">Dýňový krém s praženými dýňovými semínky</td>
-                    <td class="table__text">55&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Hovězí na červeném víně a bramborová kaše s máslem</td>
-                    <td class="table__text">165&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Čerstvé tagliatelle s omáčkou quattro formaggi, sušenými rajčaty a rukolou
-                    </td>
-                    <td class="table__text">145&nbsp;kč</td>
-                </tr>
-
-
-                <th class="table__header">Středa</th>
-
-                <tr class="table__row">
-                    <td class="table__text">Květákový krém s muškátovým oříškem, máslové krutony</td>
-                    <td class="table__text">50&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Šťavnaté grilované kuřecí prso, brokolice, zeleninový kuskus</td>
-                    <td class="table__text">150&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Kuřecí gyros, zelný salát, jogurtový dresink, zelenina, pita chléb</td>
-                    <td class="table__text">155&nbsp;kč</td>
-                </tr>
-
-                <th class="table__header">Čtvrtek</th>
-
-                <tr class="table__row">
-                    <td class="table__text">Polévka z červené čočky</td>
-                    <td class="table__text">55&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Hovězí tafelspitz, vařená kořenová zelenina, brambory s pažitkou</td>
-                    <td class="table__text">165&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Toretellini plněné prosciuttem s máslem, čerstvou šalvějí, rukolou a
-                        parmazánem</td>
-                    <td class="table__text">140&nbsp;kč</td>
-                </tr>
-
-                <th class="table__header">Pátek</th>
-                <tr class="table__row">
-                    <td class="table__text">Boršč se zakysanou smetanou</td>
-                    <td class="table__text">55&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Grilovaná vepřová panenka, smetanovo-hříbková omáčka, šťouchané brambory s
-                        křupavou
-                        cibulkou</td>
-                    <td class="table__text">160&nbsp;kč</td>
-                </tr>
-
-                <tr class="table__row">
-                    <td class="table__text">Grilovaný kozí sýr, salát z černé čočky beluga, pečená dýně, zelenina a
-                        medovo-hořčičný dresink</td>
-                    <td class="table__text">170&nbsp;kč</td>
-                </tr>
-
-            </table>
-        </section>
-
-        <section class="breakfast-nav">
-
-            <div class="grid">
-
-                <div class="grid__column-left">
-                    <img class="photo photo--hidden" src="images/pancake.jpg" alt="Sweet toust">
-                </div>
-
-                <div class="grid__column-middle breakfast-nav__content">
-                    <h2 class="title title--padding">Snídaně</h2>
-                    <p class="title__text">8-10h</p>
-                    <a class="button button--white" href="#">více</a>
-                </div>
-
-                <div class="grid__column-right">
-                    <img class="photo photo--hidden" src="images/benedict-eggs.jpg" alt="Eggs Benedict">
-                </div>
-
-            </div>
-        </section>
-
-        <section class="events">
-            <h2 class="title">Události</h2>
-
-            <div class="flex">
-
-                <div class="card">
-                    <img class="card__img" src="images/stand-up-comedy.jpg" alt="Microphone">
-
-                    <div class="card__body">
-                        <h3 class="card__title">Stand up comedy</h3>
-                        <ul>
-                            <li class="card__date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-calendar" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                </svg>
-                                8.12.2022
-                            </li>
-                            <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                                    <path
-                                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-                                </svg> 17:00</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__img" src="images/christmas-party.jpg" alt="Christmas table">
-
-                    <div class="card__body">
-                        <h3 class="card__title">Christmas party</h3>
-                        <ul>
-                            <li class="card__date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-calendar" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                </svg>
-                                23.12.2022
-                            </li>
-                            <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                                    <path
-                                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-                                </svg> 19:00</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__img" src="images/new-year.jpg" alt="Fireworks">
-
-                    <div class="card__body">
-                        <h3 class="card__title">Welcome, New Year</h3>
-                        <ul>
-                            <li class="card__date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-calendar" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                </svg>
-                                31.12.2022
-                            </li>
-                            <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                                    <path
-                                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-                                </svg> 20:00</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-            <a class="button button--black button--margin" href="#">více</a>
-        </section>
-
-    </main>
-
-    <div class="scroll-up">
-        <a class="button" href="#menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-            </svg>
-            Nahoru</a>
     </div>
+</section>
 
-    <footer class="footer">
-        <div class="footer__newsletter">
-            <h3 class="footer__title">Zaregistrujte se k odběru novinek!</h3>
-            <p class="footer__text">(odpolední menu, události, slevové akce)</p>
+<section class="events">
+    <h2 class="title">Nadcházející události</h2>
 
-            <p class="hidden--alert" id="after-submit-text">Děkujeme za registraci :)</p>
+    <div class="flex">
 
-            <input type="email" value="novak@gmail.com" id="newsletter" class="input">
-            <button onclick="submitForm()" for="newsletter" id="submit-button"
-                class="button button--black button--block">Zaregistrovat
-                se</button>
+        <div class="card">
+            <img class="card__img" src="/images/stand-up-comedy.jpg" alt="Microphone">
 
+            <div class="card__body">
+                <h3 class="card__title">Stand up comedy</h3>
+                <ul>
+                    <li class="card__date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg>
+                        8.12.2022
+                    </li>
+                    <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-alarm">
+                            <path
+                                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                            <path
+                                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                        </svg> 17:00</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="footer__open">
-            <h3 class="footer__title">Otevírací doba</h3>
-            <p class="footer__text">pondělí až sobota 8:00 - 22:00 hod.</p>
-            <p class="footer__text">neděle 8:00 - 18:00 hod.</p>
+        <div class="card">
+            <img class="card__img" src="/images/christmas-party.jpg" alt="Christmas table">
+
+            <div class="card__body">
+                <h3 class="card__title">Christmas party</h3>
+                <ul>
+                    <li class="card__date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg>
+                        23.12.2022
+                    </li>
+                    <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-alarm">
+                            <path
+                                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                            <path
+                                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                        </svg> 19:00</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="footer__copyright">
-            &copy;2022, Staň se kóderkou, Czechitas.
-        </div>
-    </footer>
-</body>
+        <div class="card">
+            <img class="card__img" src="/images/new-year.jpg" alt="Fireworks">
 
-</html>
+            <div class="card__body">
+                <h3 class="card__title">Welcome, New Year</h3>
+                <ul>
+                    <li class="card__date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg>
+                        31.12.2022
+                    </li>
+                    <li class="card__time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-alarm">
+                            <path
+                                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                            <path
+                                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                        </svg> 20:00</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <a class="button button--black button--margin" href="/udalosti/">více</a>
+</section>
