@@ -3,7 +3,7 @@
 // font-family: 'IM Fell English SC', serif;
 .header {
     position: relative;
-    height: 65vh;
+    height: 40vh;
 
     @media screen and (min-width: variables.$breakpoint-pc ){
         height: 80vh;
@@ -15,7 +15,7 @@
     // background-repeat: no-repeat;
 
     &__image {
-        height: 65vh;
+        height: 40vh;
         opacity: 0.9;
     @media screen and (min-width: variables.$breakpoint-pc ) {
             height: 80vh;

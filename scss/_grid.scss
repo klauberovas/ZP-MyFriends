@@ -1,6 +1,6 @@
 @use 'variables';
 
-.grid {
+.grid-column {
 
     @media screen and (min-width: variables.$breakpoint-pc) {
         display: grid;
@@ -10,19 +10,42 @@
     }
 
 
-    &__column-left {
+    &__left {
         grid-column: 1;
         grid-row: 1;
     }
 
-    &__column-middle {
+    &__middle {
         grid-column: 2;
         grid-row: 1;
     }
 
-    &__column-right {
+    &__right {
         grid-column: 3;
         grid-row: 1;
+    }
+}
+
+.grid-gap {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-row {
+    @media screen and (min-width: variables.$breakpoint-pc){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+        gap: 0 30px; 
+
+    &__left {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    &__right {
+        grid-column: 2;
+        grid-row: 1;
+    }
     }
 }
 
