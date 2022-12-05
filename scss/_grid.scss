@@ -32,7 +32,7 @@
 }
 
 .grid-row {
-    @media screen and (min-width: variables.$breakpoint-pc){
+    @media screen and (min-width: variables.$breakpoint-large-tablet){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 400px;
