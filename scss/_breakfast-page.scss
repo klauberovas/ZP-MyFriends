@@ -1,0 +1,17 @@
+@use 'variables';
+
+.offer {
+
+    &__title,
+    &__text {
+        margin: 0;
+    }
+
+    &__text {
+        font-style: italic;
+    }
+    
+    &__price {
+        font-weight: bold;
+    }
+}

@@ -8,10 +8,21 @@
     }
 
     &__image {
-            height: 400px;
+        height: 400px;
         }
+
+    &__image--hidden {
+        display: none;
+    @media screen and (min-width: variables.$breakpoint-large-tablet) {
+        display: block;
+        }
+    }
 
     &__return-button {
         text-align: left;
+    }
+
+    &__intro {
+        margin-bottom: 20px;
     }
 }

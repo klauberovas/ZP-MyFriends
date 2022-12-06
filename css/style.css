@@ -26,8 +26,9 @@ footer,
   text-align: center;
 }
 
-header,
-section,
+.header,
+.lunch-menu,
+.events,
 .scroll-up {
   margin-bottom: 40px;
 }
@@ -221,7 +222,7 @@ img {
 
 .grid-gap {
   display: grid;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -229,15 +230,17 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 400px;
-    gap: 0 30px;
+    gap: 20px;
   }
   .grid-row__left {
     grid-column: 1;
     grid-row: 1;
+    align-self: center;
   }
   .grid-row__right {
     grid-column: 2;
     grid-row: 1;
+    align-self: center;
   }
 }
 
@@ -268,6 +271,9 @@ img {
   }
 }
 
+.table {
+  width: 100%;
+}
 .table__header {
   padding: 20px 0 0 10px;
   text-align: left;
@@ -276,9 +282,13 @@ img {
   border-bottom: 1px dashed #000;
   text-align: left;
 }
+.table__text:first-child {
+  width: 100%;
+}
 .table__text:last-child {
   padding-left: 20px;
   border: 0;
+  text-align: right;
 }
 
 .events {
@@ -405,8 +415,19 @@ ul {
 .content__image {
   height: 400px;
 }
+.content__image--hidden {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .content__image--hidden {
+    display: block;
+  }
+}
 .content__return-button {
   text-align: left;
+}
+.content__intro {
+  margin-bottom: 20px;
 }
 
 .gallery__image {
@@ -432,5 +453,25 @@ ul {
   .grid-gallery__right {
     grid-column: 2/span 2;
     grid-row: 3/span 2;
+  }
+}
+
+.offer__title, .offer__text {
+  margin: 0;
+}
+.offer__text {
+  font-style: italic;
+}
+.offer__price {
+  font-weight: bold;
+}
+
+.drink-menu {
+  padding: 0 10px 10px 10px;
+}
+@media screen and (min-width: 960px) {
+  .drink-menu {
+    width: 960px;
+    padding: 0 40px 40px 40px;
   }
 }/*# sourceMappingURL=style.css.map */
