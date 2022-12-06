@@ -1,3 +1,4 @@
+/** Rozbalení menu */
 function myFunction() {
   var x = document.getElementById("menu--hidable");
   if (x.style.display === "block") {
@@ -7,6 +8,7 @@ function myFunction() {
   }
 }
 
+/** Responzivní menu (zmizení znaku menu) */
 function screenResize() {
   var screenWidth = window.innerWidth;
   var x = document.getElementById("menu--hidable");
@@ -16,9 +18,9 @@ function screenResize() {
     x.style.display = "none";
   }
 }
-
 window.onresize = screenResize;
 
+/** Poděkování za odebírání newsletteru*/
 function submitForm () {
   var x = document.getElementById("newsletter");
   x.style.display = "none";
