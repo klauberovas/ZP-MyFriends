@@ -1,6 +1,6 @@
 @use 'variables';
 
-// font-family: 'IM Fell English SC', serif;
+
 .header {
     position: relative;
     height: 60vh;
@@ -11,7 +11,7 @@
 
     &__image {
         height: 60vh;
-        opacity: 0.9;
+        opacity: 0.8;
     @media screen and (min-width: variables.$breakpoint-pc ) {
             height: 80vh;
         }
@@ -25,38 +25,51 @@
         bottom: 0;
         margin: 10px auto;
         z-index: 1;
-        color: #fff; 
+        color: #000;
+        font-family: 'IM Fell English SC', serif; 
     }
 
     &__title {
-        margin-top: 60px;
+        margin-top:100px;
         font-size: 38px;
         font-weight: bold;
-        // background-color: rgba(0, 0, 0, 0.5);
-        // border-radius: 12px;
-        // background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        text-transform: uppercase;
+        //background-color: rgba(0, 0, 0, 0.5);
+        //border-radius: 12px;
+        @media screen and (min-width: variables.$breakpoint-pc ) {
+            font-size: 52px;
+        }
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 8px;
+        background-color: #000;
+        margin: auto;
     }
 
     &__text {
         margin: 0;
-        font-style: italic;
     }
   
     &__title,
     &__text {
         font-weight: bold;
-        text-shadow: 2px 2px 2px black;
+        text-shadow: 2px 2px 2px white;
     }
 }
 
 .slider-button {
     z-index: 2;
     position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 50% auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 50% auto;
 
 }
 

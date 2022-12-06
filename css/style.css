@@ -26,11 +26,11 @@ footer,
   text-align: center;
 }
 
-.header,
 .lunch-menu,
+.breakfast-nav,
 .events,
 .scroll-up {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -81,6 +81,9 @@ img {
 }
 .title--padding {
   padding-top: 20px;
+}
+.title--uppercase {
+  text-transform: uppercase;
 }
 
 .photo {
@@ -172,7 +175,7 @@ img {
 }
 .header__image {
   height: 60vh;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 @media screen and (min-width: 960px) {
   .header__image {
@@ -187,20 +190,35 @@ img {
   bottom: 0;
   margin: 10px auto;
   z-index: 1;
-  color: #fff;
+  color: #000;
+  font-family: "IM Fell English SC", serif;
 }
 .header__title {
-  margin-top: 60px;
+  margin-top: 100px;
   font-size: 38px;
   font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 960px) {
+  .header__title {
+    font-size: 52px;
+  }
+}
+.header__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #000;
+  margin: auto;
 }
 .header__text {
   margin: 0;
-  font-style: italic;
 }
 .header__title, .header__text {
   font-weight: bold;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px white;
 }
 
 .slider-button {
@@ -258,7 +276,7 @@ img {
 }
 
 .breakfast-nav {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .breakfast-nav__content {
   text-align: center;
