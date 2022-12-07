@@ -6,7 +6,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 300px;
-        // gap: 20px;
     }
 
 
@@ -27,13 +26,13 @@
 }
 
 .grid-row {
-        margin-bottom: 20px;
+        margin-bottom: variables.$spacer;
 
     @media screen and (min-width: variables.$breakpoint-large-tablet){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 400px;
-        gap: 20px; 
+        gap: variables.$spacer; 
 
     &__left {
         grid-column: 1;

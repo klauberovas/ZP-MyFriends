@@ -24,11 +24,12 @@ footer,
     text-align: center;
  }
 
+.header,
 .lunch-menu,
 .breakfast-nav,
 .events,
 .scroll-up{
-    margin-bottom: 20px;
+    margin-bottom: variables.$spacer;
 }
 
 img {

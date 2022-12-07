@@ -24,9 +24,19 @@
         padding: 0;
         list-style: none;
     @media screen and (min-width: variables.$breakpoint-pc) {
+        max-width: 1100px;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
         }
+    }
+
+    &__item {
+        &--active .menu__link {
+            font-weight: bold;
+            color: white;
+            text-decoration: underline;
+         }
     }
 
     &__link {
@@ -38,9 +48,16 @@
         &:hover {
             background-color: #fff;
             color: variables.$c-primary;
+            text-decoration: none;
         }
+
+        &--inline-block {
+            display: inline-block;
+        }
+
     }
 
+    
     &__icon {
         background-color: variables.$c-primary;
         color: #fff;
@@ -54,15 +71,11 @@
         display: none;
         }
 
-        &:hover {
+        &:hover  {
             background-color: #fff;
             color: variables.$c-primary;
         }
     }
 
-    &__link--inline-block {
-        font-weight: bold;
-        display: inline-block;
-    }
 
 }

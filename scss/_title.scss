@@ -12,10 +12,6 @@
     }
 
     &--padding {
-        padding-top: 20px;
-    }
-
-    &--uppercase {
-        text-transform: uppercase;
+        padding-top: variables.$spacer;
     }
 }

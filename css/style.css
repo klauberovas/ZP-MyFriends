@@ -26,6 +26,7 @@ footer,
   text-align: center;
 }
 
+.header,
 .lunch-menu,
 .breakfast-nav,
 .events,
@@ -82,9 +83,6 @@ img {
 .title--padding {
   padding-top: 20px;
 }
-.title--uppercase {
-  text-transform: uppercase;
-}
 
 .photo {
   display: block;
@@ -127,9 +125,16 @@ img {
 }
 @media screen and (min-width: 960px) {
   .menu__list {
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
+}
+.menu__item--active .menu__link {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
 }
 .menu__link {
   text-decoration: none;
@@ -140,6 +145,10 @@ img {
 .menu__link:hover {
   background-color: #fff;
   color: #3e3d3d;
+  text-decoration: none;
+}
+.menu__link--inline-block {
+  display: inline-block;
 }
 .menu__icon {
   background-color: #3e3d3d;
@@ -158,10 +167,6 @@ img {
 .menu__icon:hover {
   background-color: #fff;
   color: #3e3d3d;
-}
-.menu__link--inline-block {
-  font-weight: bold;
-  display: inline-block;
 }
 
 .header {

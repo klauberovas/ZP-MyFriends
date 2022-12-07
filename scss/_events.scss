@@ -1,6 +1,6 @@
 @use 'variables';
 .events-nav {
-    padding: 0 20px;
+    padding: 0 variables.$spacer;
     text-align: center;
     @media screen and (min-width: variables.$breakpoint-pc ) {
         padding: 0;
@@ -14,7 +14,7 @@
 .flex {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: variables.$spacer;
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
       flex-direction: row;
@@ -29,14 +29,14 @@ ul {
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: variables.$spacer;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
         margin: 0;
         
     &:nth-child(2) {
-        margin: 0 20px;
+        margin: 0 variables.$spacer;
         }
     }
 
