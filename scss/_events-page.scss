@@ -1,21 +1,22 @@
 @use 'variables';
 /*
  **************************************
-	Breakfast menu
+	Events page
  **************************************
 */
-.offer {
+.events-page {
+
+    &__title {
+        text-decoration: underline;
+    }
 
     &__title,
-    &__text {
+    &__date, 
+    &__time {
         margin: 0;
     }
 
-    &__text {
-        font-style: italic;
-    }
-    
-    &__price {
+    &__time {
         font-weight: bold;
     }
 }

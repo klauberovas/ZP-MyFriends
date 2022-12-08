@@ -1,6 +1,9 @@
 @use 'variables';
-
-
+/*
+ **************************************
+	Header
+ **************************************
+*/
 .header {
     position: relative;
     height: 60vh;
@@ -23,14 +26,14 @@
         left: 0;
         right: 0;
         bottom: 0;
-        margin: 10px auto;
+        margin: 80px auto;
         z-index: 1;
         color: #000;
         font-family: 'IM Fell English SC', serif; 
     }
 
     &__title {
-        margin-top:100px;
+        // margin-top:90px;
         font-size: 38px;
         font-weight: bold;
         display: inline-block;
@@ -42,17 +45,18 @@
         }
     }
 
-    &__title::after {
+   &__title::after {
         content: "";
         display: block;
-        width: 80px;
-        height: 8px;
+        width: 200px;
+        height: 6px;
         background-color: #000;
         margin: auto;
     }
 
     &__text {
         margin: 0;
+        font-size: 20px;
     }
   
     &__title,

@@ -1,11 +1,16 @@
 @use 'variables';
-
+/*
+ **************************************
+	Button
+ **************************************
+*/
 .button {
     text-decoration: none;
     padding: 10px 30px;
     display: inline-block;
     color: #000;
 
+    /* White button*/
     &--white {
         color: #fff;
         border: 2px solid #fff;
@@ -16,6 +21,7 @@
         }
     }
 
+    /* Black button*/
     &--black {
         border: 2px solid #000;
         

@@ -1,4 +1,9 @@
 @use 'variables';
+/*
+ **************************************
+	Events card on the main side 
+ **************************************
+*/
 .events-nav {
     padding: 0 variables.$spacer;
     text-align: center;
@@ -11,6 +16,7 @@
     }
 }
 
+/* Flexbox card in events-nav*/
 .flex {
     display: flex;
     flex-direction: column;
@@ -28,12 +34,18 @@ ul {
     padding: 0;
 }
 
+/*
+ **************************************
+	Events card
+ **************************************
+*/
 .card {
     margin-bottom: variables.$spacer;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
         margin: 0;
+        flex-basis: calc(100% / 3);
         
     &:nth-child(2) {
         margin: 0 variables.$spacer;
@@ -59,6 +71,6 @@ ul {
     }
 
     &__img {
-        max-height: 350px;
+        height: 350px;
     }
 }

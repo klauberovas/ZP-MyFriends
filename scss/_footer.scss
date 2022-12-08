@@ -1,5 +1,9 @@
 @use 'variables';
-
+/*
+ **************************************
+	Footer
+ **************************************
+*/
 .footer {
     display: flex;
     flex-direction: column;
@@ -41,19 +45,20 @@
         margin: 0;
     }
    
-}
+    /* Footer newsletter input */
+    &__input {
+        padding: 10px 30px;
+        margin-top: variables.$spacer;
+        text-align: center;
+        font-style: italic;
+    }
 
-.input {
-    padding: 10px 30px;
-    margin-top: variables.$spacer;
-    text-align: center;
-    font-style: italic;
+    /* Footer hidden alert */
+    &__hidden--alert {
+        color: #62b022;
+        font-weight: bold;
+        display: none;
+        margin: 10px;
+    }
+   
 }
-
-.hidden--alert {
-    color: #62b022;
-    font-weight: bold;
-    display: none;
-    margin: 10px;
-}
-
