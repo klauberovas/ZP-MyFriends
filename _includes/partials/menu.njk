@@ -1,0 +1,23 @@
+<nav class="menu" id="page-top">
+    <ul class="menu__list">
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a href="/"
+                class="menu__link menu__link--inline-block">Domů</a></li>
+        <div id="menu--hidable">
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'onas' }}"><a href="/onas/"
+                    class="menu__link">O nás</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'snidane' }}"><a href="/snidane/"
+                    class="menu__link">Snídaně</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'napoje' }}"><a href="/napoje/"
+                    class="menu__link">Nápoje</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'udalosti' }}"><a href="/udalosti/"
+                    class="menu__link">Události</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a href="/kontakt/"
+                    class="menu__link">Kontakt</a></li>
+        </div>
+    </ul>
+
+    <!-- Ikona menu -->
+    <a href="javascript:void(0);" class="menu__icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>

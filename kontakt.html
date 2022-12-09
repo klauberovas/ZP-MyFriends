@@ -1,53 +1,46 @@
 ---
-layout: main-template.njk
+layout: layouts/content-template.njk
 title: Kontakt
 ---
 
-<section class="content">
+<section class="contact">
 
-    <div class="content__return-button">
-        <a class="button button--underline" href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-return-left">
-                <path fill-rule="evenodd"
-                    d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
-            </svg>
-            Zpět na úvod</a>
-    </div>
+    <h2 class="title">Kontaktujte nás</h2>
 
-    <section class="contact">
+    <p class="contact__address">Masarykovo náměstí 720/2, Praha 602 00, Česká Republika</p>
 
-        <h2 class="title">Kontaktujte nás</h2>
+    <p class="contact__phone">+420 777 888 999</p>
 
-        <p class="contact__address">Masarykovo náměstí 720/2, Praha 602 00, Česká Republika</p>
+    <p class="contact__mail">info@bistro-myfriends.cz</p>
 
-        <p class="contact__phone">+420 777 888 999</p>
+    <p class="contact__ic">IČ: 01234567</p>
 
-        <p class="contact__mail">info@bistro-myfriends.cz</p>
+    <p class="contact__dic">DIČ: CZ01234567</p>
 
-        <p class="contact__ic">IČ: 01234567</p>
+    <h3>Máme pro vás otevřeno</h3>
 
-        <p class="contact__dic">DIČ: CZ01234567</p>
+    <p class="contact__opening-time">pondělí až neděle 08:00 - 22:00 hod.</p>
 
-        <h3>Máme pro vás otevřeno</h3>
+    <p class="contact__info-form">Případně vyplňte kontaktní formulář, rádi se vám ozveme.</p>
+</section>
 
-        <p class="contact__opening-time">pondělí až neděle 08:00 - 22:00 hod.</p>
+<section class="contact-form">
+    <h2 class="title">Kontaktní formulář</h2>
+    <fieldset>
+        <!-- <legend></legend> -->
 
-        <p class="contact__info-form">Případně vyplňte kontaktní formulář, rádi se vám ozveme.</p>
-    </section>
+        <label for="jmeno">Vaše jméno a příjmení *</label>
+        <input type="text" name="jmeno" id="jmeno" size="50" maxlength="50" placeholder="Jméno a příjmení" required>
 
-    <section class="contact-form">
-        Kontaktní formulář
-        Vaše jméno (vyžadováno)
+        <label for="email">Váš e-mail *</label>
+        <input type="email" name="email" id="email" size="20" maxlength="30" placeholder="novak@seznam.cz" required>
 
-        Váš email (vyžadováno)
+        <label for="predmet">Předmět</label>
+        <input type="predmet" name="predmet" id="predmet" size="50" maxlength="30">
 
-        Předmět
+        <label for="zprava">Vaše zpráva</label>
+        <textarea name="zprava" id="zprava"></textarea>
 
-        Vaše zpráva
-
-        ODESLAT ZPRÁVU
-    </section>
-
-
+        <button type="submit">Odeslat zprávu</button>
+    </fieldset>
 </section>

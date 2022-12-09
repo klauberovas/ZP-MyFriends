@@ -1,298 +1,283 @@
 ---
-layout: main-template.njk
+layout: layouts/content-template.njk
 title: Nápoje
 ---
 
-<section class="content">
+<section class="drink-menu">
 
-    <div class="content__return-button">
-        <a class="button button--underline" href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-return-left">
-                <path fill-rule="evenodd"
-                    d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
-            </svg>
-            Zpět na úvod</a>
+    <h2 class="title">Nápojový lístek</h2>
+
+
+    <div class="grid-row">
+        <div class="grid-row__left">
+            <table class="table">
+
+                <th class="table__header">Kávy</th>
+                <tr class="table__row">
+                    <td class="table__text">Espresso</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+
+                <tr class="table__row">
+                    <td class="table__text">Dvojité espresso</td>
+                    <td class="table__price">55&nbsp;Kč</td>
+                </tr>
+
+                <tr class="table__row">
+                    <td class="table__text">Espresso Macchiato</td>
+                    <td class="table__price">49&nbsp;Kč</td>
+                </tr>
+
+                <tr class="table__row">
+                    <td class="table__text">Americano</td>
+                    <td class="table__price">53&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Decaffeinated Coffee/bezkofeinová káva</td>
+                    <td class="table__price">49&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Cappuccino</td>
+                    <td class="table__price">59&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Café Latte</td>
+                    <td class="table__price">65&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Café Latte oříškové</td>
+                    <td class="table__price">75&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Café Latte karamelové</td>
+                    <td class="table__price">75&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Frappé</td>
+                    <td class="table__price">75&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Ledová káva</td>
+                    <td class="table__price">70&nbsp;Kč</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="grid-row__right">
+            <img class="content__image content__image--hidden" src="/images/coffee.jpg" alt="Cup of coffee">
+        </div>
     </div>
 
-    <section class="drink-menu">
+    <div class="grid-row">
+        <div class="grid-row__right">
+            <table class="table">
+                <th class="table__header">Čaje</th>
+                <tr class="table__row">
+                    <td class="table__text">Jasmine Gold </td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">English Breakfast </td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Earl Grey </td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Moroccan Mint </td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Masala Chai</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Magic Moringa</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Ayurveda Herbs&Ginger</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Sweet Berries</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Mátový čaj</td>
+                    <td class="table__price">75&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Zázvorový čaj</td>
+                    <td class="table__price">75&nbsp;Kč</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-row__left">
+            <img class="content__image content__image--hidden" src="/images/tea.jpg" alt="Cup of tea">
+        </div>
+    </div>
 
-        <h2 class="title">Nápojový lístek</h2>
+    <div class="grid-row">
+        <div class="grid-row__left">
+            <table>
+                <th class="table__header">Nealkoholické nápoje</th>
+                <tr class="table__row">
+                    <td class="table__text">0,25 l San Benedetto neperlivá</td>
+                    <td class="table__price">39&nbsp;Kč</td>
+                </tr>
 
-
-        <div class="grid-row">
-            <div class="grid-row__left">
-                <table class="table">
-
-                    <th class="table__header">Kávy</th>
-                    <tr class="table__row">
-                        <td class="table__text">Espresso</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-
-                    <tr class="table__row">
-                        <td class="table__text">Dvojité espresso</td>
-                        <td class="table__price">55&nbsp;Kč</td>
-                    </tr>
-
-                    <tr class="table__row">
-                        <td class="table__text">Espresso Macchiato</td>
-                        <td class="table__price">49&nbsp;Kč</td>
-                    </tr>
-
-                    <tr class="table__row">
-                        <td class="table__text">Americano</td>
-                        <td class="table__price">53&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Decaffeinated Coffee/bezkofeinová káva</td>
-                        <td class="table__price">49&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Cappuccino</td>
-                        <td class="table__price">59&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Café Latte</td>
-                        <td class="table__price">65&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Café Latte oříškové</td>
-                        <td class="table__price">75&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Café Latte karamelové</td>
-                        <td class="table__price">75&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Frappé</td>
-                        <td class="table__price">75&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Ledová káva</td>
-                        <td class="table__price">70&nbsp;Kč</td>
-                    </tr>
-
-                </table>
-            </div>
-
-            <div class="grid-row__right">
-                <img class="content__image content__image--hidden" src="/images/coffee.jpg" alt="Cup of coffee">
-            </div>
+                <tr class="table__row">
+                    <td class="table__text">0,25 l San Benedetto perlivá</td>
+                    <td class="table__price">39&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,25 l Coca Cola, Coca Cola Zero</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,25 l Tonic</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,2 l Džus Pago</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,5 l Filtrovaná voda</td>
+                    <td class="table__price">29&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,5 l Soda</td>
+                    <td class="table__price">35&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,5 l Domácí limonáda- dle nabídky</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,2 l Pomerančový fresh džus</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+            </table>
         </div>
 
-        <div class="grid-row">
-            <div class="grid-row__right">
-                <table class="table">
-                    <th class="table__header">Čaje</th>
-                    <tr class="table__row">
-                        <td class="table__text">Jasmine Gold </td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">English Breakfast </td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Earl Grey </td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Moroccan Mint </td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Masala Chai</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Magic Moringa</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Ayurveda Herbs&Ginger</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Sweet Berries</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Mátový čaj</td>
-                        <td class="table__price">75&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Zázvorový čaj</td>
-                        <td class="table__price">75&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="grid-row__left">
-                <img class="content__image content__image--hidden" src="/images/tea.jpg" alt="Cup of tea">
-            </div>
+        <div class="grid-row__right">
+            <img class="content__image content__image--hidden" src="/images/lemonade.jpg" alt="Lemonade">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-row__right">
+            <table>
+                <th class="table__header">Lahvová piva</th>
+                <tr class="table__row">
+                    <td class="table__text">0,33 l Pilsner Urquell</td>
+                    <td class="table__price">59&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,33 l Cider Stassen</td>
+                    <td class="table__price">65&nbsp;Kč</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-row__left">
+            <img class="content__image content__image--hidden" src="/images/beer.jpg" alt="Three bottles of beer">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-row__left">
+            <table>
+                <th class="table__header">Bílé víno</th>
+                <tr class="table__row">
+                    <td class="table__text">0,1 l Pinot grigio</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,1 l Chardoney Villa Rocca</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-row__right">
+            <img class="content__image content__image--hidden" src="/images/white-wine.jpg" alt="Bottle wine and glass">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-row__right">
+            <table>
+                <th class="table__header">Červené víno</th>
+                <tr class="table__row">
+                    <td class="table__text">0,1 l Merlot Rosso</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,75 l Merlot Veneto Poesie</td>
+                    <td class="table__price">300&nbsp;Kč</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-row__left">
+            <img class="content__image content__image--hidden" src="/images/red-wine.jpg"
+                alt="Bottle red wine and glass">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-row__left">
+            <table>
+                <th class="table__header">Šumivé víno</th>
+                <tr class="table__row">
+                    <td class="table__text">0,1 l Prosecco Costaross</td>
+                    <td class="table__price">45&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">0,75 l Scavi and Ray</td>
+                    <td class="table__price">319&nbsp;Kč</td>
+                </tr>
+            </table>
         </div>
 
-        <div class="grid-row">
-            <div class="grid-row__left">
-                <table>
-                    <th class="table__header">Nealkoholické nápoje</th>
-                    <tr class="table__row">
-                        <td class="table__text">0,25 l San Benedetto neperlivá</td>
-                        <td class="table__price">39&nbsp;Kč</td>
-                    </tr>
-
-                    <tr class="table__row">
-                        <td class="table__text">0,25 l San Benedetto perlivá</td>
-                        <td class="table__price">39&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,25 l Coca Cola, Coca Cola Zero</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,25 l Tonic</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,2 l Džus Pago</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,5 l Filtrovaná voda</td>
-                        <td class="table__price">29&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,5 l Soda</td>
-                        <td class="table__price">35&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,5 l Domácí limonáda- dle nabídky</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,2 l Pomerančový fresh džus</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="grid-row__right">
-                <img class="content__image content__image--hidden" src="/images/lemonade.jpg" alt="Lemonade">
-            </div>
+        <div class="grid-row__right">
+            <img class="content__image content__image--hidden" src="/images/champagne.jpg"
+                alt="Bottle champagne and glass">
         </div>
+    </div>
 
-        <div class="grid-row">
-            <div class="grid-row__right">
-                <table>
-                    <th class="table__header">Lahvová piva</th>
-                    <tr class="table__row">
-                        <td class="table__text">0,33 l Pilsner Urquell</td>
-                        <td class="table__price">59&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,33 l Cider Stassen</td>
-                        <td class="table__price">65&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="grid-row__left">
-                <img class="content__image content__image--hidden" src="/images/beer.jpg" alt="Three bottles of beer">
-            </div>
+    <div class="grid-row">
+        <div class="grid-row__right">
+            <table>
+                <th class="table__header">Míchané nápoje</th>
+                <tr class="table__row">
+                    <td class="table__text">Mimosa</td>
+                    <td class="table__price">69&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Hugo spritz</td>
+                    <td class="table__price">99&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Aperol spritz</td>
+                    <td class="table__price">109&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text"> Gin tonic</td>
+                    <td class="table__price">119&nbsp;Kč</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__text">Passionfruit marttini</td>
+                    <td class="table__price">129&nbsp;Kč</td>
+                </tr>
+
+            </table>
         </div>
-
-        <div class="grid-row">
-            <div class="grid-row__left">
-                <table>
-                    <th class="table__header">Bílé víno</th>
-                    <tr class="table__row">
-                        <td class="table__text">0,1 l Pinot grigio</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,1 l Chardoney Villa Rocca</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="grid-row__right">
-                <img class="content__image content__image--hidden" src="/images/white-wine.jpg"
-                    alt="Bottle wine and glass">
-            </div>
+        <div class="grid-row__left">
+            <img class="content__image content__image--hidden" src="/images/coctail.jpg" alt="Coctail">
         </div>
-
-        <div class="grid-row">
-            <div class="grid-row__right">
-                <table>
-                    <th class="table__header">Červené víno</th>
-                    <tr class="table__row">
-                        <td class="table__text">0,1 l Merlot Rosso</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,75 l Merlot Veneto Poesie</td>
-                        <td class="table__price">300&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="grid-row__left">
-                <img class="content__image content__image--hidden" src="/images/red-wine.jpg"
-                    alt="Bottle red wine and glass">
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="grid-row__left">
-                <table>
-                    <th class="table__header">Šumivé víno</th>
-                    <tr class="table__row">
-                        <td class="table__text">0,1 l Prosecco Costaross</td>
-                        <td class="table__price">45&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">0,75 l Scavi and Ray</td>
-                        <td class="table__price">319&nbsp;Kč</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="grid-row__right">
-                <img class="content__image content__image--hidden" src="/images/champagne.jpg"
-                    alt="Bottle champagne and glass">
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="grid-row__right">
-                <table>
-                    <th class="table__header">Míchané nápoje</th>
-                    <tr class="table__row">
-                        <td class="table__text">Mimosa</td>
-                        <td class="table__price">69&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Hugo spritz</td>
-                        <td class="table__price">99&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Aperol spritz</td>
-                        <td class="table__price">109&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text"> Gin tonic</td>
-                        <td class="table__price">119&nbsp;Kč</td>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__text">Passionfruit marttini</td>
-                        <td class="table__price">129&nbsp;Kč</td>
-                    </tr>
-
-                </table>
-            </div>
-            <div class="grid-row__left">
-                <img class="content__image content__image--hidden" src="/images/coctail.jpg" alt="Coctail">
-            </div>
-        </div>
-
-    </section>
+    </div>
 
 </section>
