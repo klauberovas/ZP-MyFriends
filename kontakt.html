@@ -26,21 +26,34 @@ title: Kontakt
 
 <section class="contact-form">
     <h2 class="title">Kontaktní formulář</h2>
-    <fieldset>
-        <!-- <legend></legend> -->
 
-        <label for="jmeno">Vaše jméno a příjmení *</label>
-        <input type="text" name="jmeno" id="jmeno" size="50" maxlength="50" placeholder="Jméno a příjmení" required>
+    <div class="form-field">
+        <label class="form-field__label" for="name">Vaše jméno a příjmení&nbsp;*</label>
+        <input class="form-field__input" type="text" name="name" id="name" placeholder="Jméno a příjmení">
+    </div>
 
-        <label for="email">Váš e-mail *</label>
-        <input type="email" name="email" id="email" size="20" maxlength="30" placeholder="novak@seznam.cz" required>
+    <div class="form-field">
+        <label class="form-field__label" for="email">Váš e-mail&nbsp;*</label>
+        <input class="form-field__input" type="email" name="email" id="email" placeholder="novak@seznam.cz">
+    </div>
 
-        <label for="predmet">Předmět</label>
-        <input type="predmet" name="predmet" id="predmet" size="50" maxlength="30">
+    <div class="form-field">
+        <label class="form-field__label" for="subject">Předmět</label>
+        <input class="form-field__input" type="text" name="subject" id="subject">
+    </div>
 
-        <label for="zprava">Vaše zpráva</label>
-        <textarea name="zprava" id="zprava"></textarea>
+    <div class="form-field">
+        <label class="form-field__label" for="message">Vaše zpráva</label>
+        <textarea class="form-field__textarea" name="message" id="message"></textarea>
+    </div>
 
-        <button type="submit">Odeslat zprávu</button>
-    </fieldset>
+    <button type="submit" onclick="submitContactForm()" class="contact-form__button">Odeslat zprávu</button>
+
+    <dialog class="contact-form__dialog" id="dialog">
+        <p class="contact-form__alert">Děkujeme za zprávu.</p>
+        <form method="dialog">
+            <button class="contact-form__button">Zavřít</button>
+        </form>
+    </dialog>
+
 </section>

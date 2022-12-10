@@ -1,4 +1,6 @@
-/** Rozbalení menu */
+/**  **************************************
+	Rozbalení menu
+ ************************************** */
 function myFunction() {
   var x = document.getElementById("menu--hidable");
   if (x.style.display === "block") {
@@ -8,26 +10,97 @@ function myFunction() {
   }
 }
 
-/** Responzivní menu (zmizení znaku menu) */
+/**
+ *  **************************************
+	Responzivní menu (zmizení znaku menu)  
+ ************************************** */
 function screenResize() {
   var screenWidth = window.innerWidth;
   var x = document.getElementById("menu--hidable");
-  if (screenWidth > 960){
+  if (screenWidth > 960) {
     x.style.display = "flex";
-    } else {
+  } else {
     x.style.display = "none";
   }
 }
 window.onresize = screenResize;
 
-/** Poděkování za odebírání newsletteru*/
-function submitForm () {
-  var x = document.getElementById("newsletter");
-  x.style.display = "none";
+/** **************************************
+	  PODĚKOVÁNÍ ZA ODEBÍRÁNÍ NEWSLETTER
+ **************************************  */
+function submitNewsletter() {
+  var newsletterEmail = document.getElementById("newsletter").value;
 
-  x = document.getElementById("submit-button");
-  x.style.display = "none";
+  // Validace na email, když neobsahuje nic
+  if (!newsletterEmail) {
+    alert("Doplňte prosím email.");
 
-  x = document.getElementById("after-submit-text");
-  x.style.display = "block";
+    // Validace na email - zda obsahuje zavináč
+  } else if (!newsletterEmail.includes("@")) {
+    alert("V e-mailu vám chybí @.");
+
+    // Pokud je vše v pořádku, tak pošli formulář na submit-form.com
+  } else {
+    fetch("https://submit-form.com/lnuX5RLz", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: newsletterEmail,
+      }),
+    });
+
+    var x = document.getElementById("newsletter");
+    x.style.display = "none";
+
+    x = document.getElementById("submit-button");
+    x.style.display = "none";
+
+    x = document.getElementById("after-submit-text");
+    x.style.display = "block";
+  }
+}
+
+/** **************************************
+	  Kontaktní formulář
+ **************************************  */
+function submitContactForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  // Validace na jméno - zda je vyplněno
+  if (!name) {
+    alert("Doplňte prosím jméno a příjmení.");
+
+    // Validace na email - zda je vyplněn
+  } else if (!email) {
+    alert("Doplňte prosím e-mail.");
+
+    // Validace na email - zda obsahuje zavináč
+  } else if (!email.includes("@")) {
+    alert("V emailu vám chybí @.");
+
+    // Pokud je vše v pořádku, tak pošli formulář na submit-form.com
+  } else {
+    fetch("https://submit-form.com/GRAIvFeS", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      }),
+    });
+
+    // Pokud vše projde zobraz dialogové okno
+    window.dialog.showModal();
+  }
 }

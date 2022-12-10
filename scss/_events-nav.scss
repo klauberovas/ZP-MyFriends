@@ -7,9 +7,6 @@
 .events-nav {
     padding: 0 variables.$spacer;
     text-align: center;
-    @media screen and (min-width: variables.$breakpoint-pc ) {
-        padding: 0;
-    }
     
     @media screen and (min-width: variables.$breakpoint-large-screen ) {
         max-width: variables.$breakpoint-large-screen;
@@ -18,9 +15,11 @@
 
 /* Flexbox card in events-nav*/
 .flex {
+    @media screen and (min-width: variables.$breakpoint-tablet ) {
     display: flex;
     flex-direction: column;
     gap: variables.$spacer;
+    }
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
       flex-direction: row;
@@ -40,8 +39,9 @@ ul {
  **************************************
 */
 .card {
-    margin-bottom: variables.$spacer;
+    margin: 0 auto variables.$spacer auto;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    max-width: 400px;
 
     @media screen and (min-width: variables.$breakpoint-tablet ) {
         margin: 0;

@@ -12,19 +12,19 @@
     background-color: variables.$c-primary;
     color: #fff;
 
-    @media screen and (min-width: variables.$breakpoint-tablet) {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
+    // @media screen and (min-width: variables.$breakpoint-tablet) {
+    //     flex-wrap: wrap;
+    //     flex-direction: row;
+    //     justify-content: space-evenly;
     
-    }
+    // }
 
-    &__newsletter,
-    &__open {
-    @media screen and (min-width: variables.$breakpoint-pc) {
-        flex-basis: 100%;
-        }
-    }
+    // &__newsletter,
+    // &__open {
+    // @media screen and (min-width: variables.$breakpoint-pc) {
+    //     flex-basis: 100%;
+    //     }
+    // }
 
     &__copyright{
         background-color: #000; 
@@ -44,17 +44,42 @@
     &__text{
         margin: 0;
     }
+
+    &__text--italic {
+        font-style: italic;
+    }
    
     /* Footer newsletter input */
     &__input {
+        font-family: 'Lora', serif;
         padding: 10px 30px;
         margin-top: variables.$spacer;
         text-align: center;
-        font-style: italic;
+        
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+
+    /* button newsletter */
+
+    &__newsletter-button {
+        font-family: 'Lora', serif;
+        background-color:#000 ;
+        display: block;
+        margin: calc(variables.$spacer / 2) auto 0 auto;
+        padding: calc(variables.$spacer / 2 ) variables.$spacer;
+        color: #fff;
+        border: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    
     }
 
     /* Footer hidden alert */
-    &__hidden--alert {
+    &__alert--hidden {
         color: #62b022;
         font-weight: bold;
         display: none;
