@@ -9,15 +9,15 @@
     }
 
     &__button {
-            font-family: 'Lora', serif;
-            background-color: #000;
-            color: #fff;
-            padding: calc(variables.$spacer / 2) variables.$spacer;
-            border: 0;
+        font-family: 'Lora', serif;
+        background-color: #000;
+        color: #fff;
+        padding: calc(variables.$spacer / 2) variables.$spacer;
+        border: 0;
     
-            &:hover {
-                cursor: pointer;
-            }
+        &:hover {
+            cursor: pointer;
         }
+    }
 }
 

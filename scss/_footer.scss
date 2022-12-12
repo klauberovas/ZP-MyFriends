@@ -12,20 +12,6 @@
     background-color: variables.$c-primary;
     color: #fff;
 
-    // @media screen and (min-width: variables.$breakpoint-tablet) {
-    //     flex-wrap: wrap;
-    //     flex-direction: row;
-    //     justify-content: space-evenly;
-    
-    // }
-
-    // &__newsletter,
-    // &__open {
-    // @media screen and (min-width: variables.$breakpoint-pc) {
-    //     flex-basis: 100%;
-    //     }
-    // }
-
     &__copyright{
         background-color: #000; 
         padding: variables.$spacer 0;
@@ -74,7 +60,7 @@
 
         &:hover {
             cursor: pointer;
-        }
+       }
     
     }
 
